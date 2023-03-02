@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.addnewbook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-end;
+  gap: 13px;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.alert-error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+main {
+  width: 768px;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+footer {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+}
+
+#book-list {
+  width: 100%;
+  min-height: 350px;
+  margin: 10px 0;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+}
+
+article {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+section {
+  width: 40%;
+  border: 1px solid black;
+  margin: auto;
+  padding: 10px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  right: 20%;
+}
+
+article:nth-child(odd) {
+  background: white;
+  border: 1px solid #ddd;
+}
+
+article:nth-child(even) {
+  background: #ddd;
+  border: 1px solid #ddd;
+}
+
+h1 {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.contacts {
+  text-align: left;
+  display: grid;
+  gap: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contacts ul {
+  list-style-type: circle;
+  padding: 5px;
+}
+
+.menu li {
+  display: inline;
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+.contacts ul li {
+  padding: 5px;
+}
+
+button,
+input {
+  padding: 10px;
+  outline: none;
+}
+
+input {
+  width: 100%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+img {
+  width: 15vw;
+  height: 8vh;
+}
+
+.btn-success {
+  min-width: 100px;
+  height: 40px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  padding: 10px;
+  transition: 0.2s all;
+  background: #008552;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-success::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  transition: 0.2s all;
+  left: 0;
+  z-index: -10;
+}
+
+.btn-success:hover {
+  color: #fff;
+  border-color: #36b37f;
+  background: #c5e9da !important;
+}
+
+.btn-success:active {
+  background: #ebf0ee;
+}
+
+.btn-success:hover::before {
+  height: 100%;
+}
+
+.btn-danger {
+  min-width: 100px;
+  height: 40px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 10px;
+  transition: 0.2s all;
+  background: #ef523c;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-danger::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  transition: 0.2s all;
+  left: 0;
+  z-index: -10;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  border-color: rgb(239 82 60);
+  background: rgb(239 82 60 / 54%) !important;
+}
+
+.btn-danger:active {
+  background: #e1270d;
+}
+
+.btn-danger:hover::before {
+  height: 100%;
+}
+
+.btn-default {
+  min-width: 100px;
+  height: 40px;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  padding: 10px;
+  transition: 0.2s all;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+}
+
+.btn-default::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  transition: 0.2s all;
+  left: 0;
+  z-index: -10;
+}
+
+.btn-default:hover {
+  color: black;
+  border-color: rgb(181 181 181);
+  background: rgb(253 253 253) !important;
+}
+
+.btn-default:active {
+  background: rgb(155 155 155);
+}
+
+.btn-default:hover::before {
+  height: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/**
+ * Project: Awesome-books
+ * File: nav.css
+ * Created: 2/20/23
+ * Author: Abdullah Al Mamun <mamun1214@gmail.com>
+ */
+
+header {
+  margin-top: 10px;
+  width: inherit;
+  min-height: 50px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.nav-branding {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #f4f4f48a;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+#time {
+  width: 100%;
+  height: 20px;
+  text-align: right;
+}

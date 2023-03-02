@@ -113,13 +113,13 @@ project.
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
-👤 **Abdullah AL mamun**
+👤 **Akpan Daniel** 
 
 - GitHub: [@danutibe07](https://github.com/danutibe07)
-- Twitter: [@CoderKnight](https://twitter.com/CoderKnight)
-- LinkedIn: [Mamun](https://www.linkedin.com/in/dev-mamun/)
+- Twitter: [@Danielutibe07](https://twitter.com/Danielutibe07?t=2kvKPTZQ7IGCw2FugE9xCQ&s=09)
+- LinkedIn: [@AkpanDaniel](https://www.linkedin.com/in/akpan-daniel-785888215/)
 
 <!-- CONTRIBUTING -->
 
